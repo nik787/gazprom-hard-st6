@@ -1,0 +1,120 @@
+.order {
+    margin-bottom: 100px;
+}
+
+.order__title {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 52.8px;
+    letter-spacing: .03rem;
+    margin: 0 auto 40px;
+}
+
+.order__container {
+    padding: 0 56px;
+}
+
+.order__wrapper {
+    box-shadow: 0px 10px 24px 0px #2023341A;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px 60px 24px;
+    margin-bottom: 28px;
+}
+
+.order__steps {
+    margin: 0;
+    padding: 0 0 36px;
+    border-bottom: 1px solid #F0F0F0;
+    list-style-type: none;
+    counter-reset: count;
+    display: grid;
+    grid-template-columns: repeat(4, 124px);
+    gap: 116px;
+}
+
+.order__steps-item {
+    counter-increment: count;
+    min-width: 124px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+    text-align: center;
+    position: relative;
+    padding-top: 34px;
+}
+
+
+
+.order__steps-item::before {
+    position: absolute;
+    top: 0;
+    left: 27px;
+    width: 70px;
+    border-radius: 60px;
+    background-color: #239DD6;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    content: "Шаг "counter(count);
+}
+
+.order__steps-item:not(:last-child):after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -14px;
+    transform: translateX(100%);
+    width: 86px;
+    height: 2px;
+    background-color: #F0F0F0;
+}
+
+.order__form {
+    padding-top: 36px;
+}
+
+.order__form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+}
+
+.order__form-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    gap: 28px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order__form-legend {
+    display: block;
+    grid-column: span 2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.1px;
+    margin-bottom: 17px;
+}
+
+.order__form-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    justify-items: end;
+}
+
+.order__form-col {
+    min-width: 450px;
+}
+
+.order__form-btn {
+    margin: 0 0 18px;
+}

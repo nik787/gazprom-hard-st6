@@ -1,0 +1,117 @@
+.tariff-card {
+    background-color: #fff;
+    padding: 36px 32px 24px;
+    border: 1px solid #E2E4E8;
+    border-radius: 28px;
+}
+
+.tariff-card--hit .tariff-card__title::after {
+    content: "Хит продаж";
+    font-size: 14px;
+    line-height: 16.1px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+    padding: 6px 13px;
+    border-radius: 60px;
+}
+
+.tariff-card__title {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    margin: 0 0 32px;
+}
+
+.tariff-card__params {
+    padding: 0;
+    margin: 0 0 23px;
+    list-style-type: none;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 85px 101px 85px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.tariff-card__params-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.tariff-card__params-item:first-child {
+    padding-right: 20px;
+}
+
+.tariff-card__params-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 2px;
+    height: 36px;
+    background-color: #999899;
+}
+
+.tariff-card__params-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+
+.tariff-card__params-sub-text {
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: 400;
+}
+
+.tariff-card__services {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style-type: none;
+    gap: 12px;
+}
+
+.tariff-card__services-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tariff-card__services-icon {
+    flex-shrink: 0;
+}
+
+.tariff-card__services-text {
+    max-width: 156px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+}
+
+.tariff-card__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 29px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.1px;
+    color: #259DD6;
+}
+
+.tariff-card__link:hover {
+    color: #9D1881;
+}
+
+.tariff-card__link:focus-visible {
+    color: #9D1881;
+}

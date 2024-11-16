@@ -1,0 +1,83 @@
+.custom-radio-payment__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 15px;
+    border: 2px solid #E2E4E8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.custom-radio-payment__label::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #259DD6;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.custom-radio-payment__field:checked ~ .custom-radio-payment__label::before {
+    background-color: #259DD6;
+    background-image: url("../../images/sprite/icon-radio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-radio-payment__label:hover {
+    border-color:#259DD6;
+}
+
+.custom-radio-payment__field:focus-visible ~ .custom-radio-payment__label {
+    border-color:#259DD6;
+}
+
+.custom-radio-payment__field:checked ~ .custom-radio-payment__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__prepayment {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.2px;
+    margin-bottom: 8px;
+}
+
+.custom-radio-payment__default-price {
+    margin: 0 0 6px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.custom-radio-payment--prepayment .custom-radio-payment__default-price {
+    margin: 0 0 8px;
+}
+
+.custom-radio-payment__description {
+    max-width: 164px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+}
+
+.custom-radio-payment__base-price {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.1rem;
+}
+
+.custom-radio-payment__per {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+
+.custom-radio-payment__description-strong {
+    font-weight: 700;
+}

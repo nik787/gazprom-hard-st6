@@ -1,0 +1,20 @@
+.privace-policy {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    color: #858385;
+}
+
+.privace-policy__link {
+    text-decoration: underline;
+    color: #239DD6;
+}
+
+.privace-policy__link:hover {
+    color: #9D1881;
+}
+
+.privace-policy__link:focus-visible {
+    color: #9D1881;
+    outline: none;
+}

@@ -1,0 +1,75 @@
+.btn {
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
+    padding: 18px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.btn--light-gradient {
+    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.btn--strong-gradient {
+    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}
+
+.btn:not(:disabled):hover {
+    background: #537CCB;
+}
+
+.btn:focus-visible {
+    background: #537CCB;
+    outline: none;
+}
+
+.btn--light-gradient:not(:disabled):hover {
+    background: #9548BD;
+}
+
+.btn--light-gradient:focus-visible {
+    background: #9548BD;
+    outline: none;
+}
+
+.btn--strong-gradient:not(:disabled)    :hover{
+    background: #D812AE;
+
+}
+
+.btn--strong-gradient:focus-visible {
+    background: #D812AE;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: #F0F0F0;
+    color: #858385;
+    cursor: auto;
+}
+
+.btn--small {
+    min-width: 131px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.1px;
+    background: #239DD6;
+    border-radius: 60px;
+    padding: 12px 20px;
+}
+
+.btn--small:not(:disabled):hover {
+    background-color: #9D1881;
+}
+
+.btn--small:focus-visible {
+    background-color: #771061;
+}

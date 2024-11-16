@@ -1,0 +1,8 @@
+.payment-form {
+    display: grid;
+    gap: 14px;
+}
+
+.payment-form__btn {
+    margin-top: 3px;
+}

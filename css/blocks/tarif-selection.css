@@ -1,0 +1,28 @@
+.tarif-selection {
+    margin-bottom: 100px;
+}
+
+.tarif-selection__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 42px auto 57px;
+}
+
+.tarif-selection__title .tarif-selection__title-special {
+    color: #259DD6;
+}
+
+.tarif-selection__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-content: center;
+    gap: 16px;
+}
