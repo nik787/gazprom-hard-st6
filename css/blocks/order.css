@@ -85,6 +85,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 20px;
+    margin-bottom: 5px;
 }
 
 .order__form-container {
