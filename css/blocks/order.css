@@ -44,24 +44,26 @@
     padding-top: 34px;
 }
 
-
-
 .order__steps-item::before {
     position: absolute;
     top: 0;
     left: 27px;
     width: 70px;
     border-radius: 60px;
-    background-color: #239DD6;
+    background-color: #F0F0F0;
     padding: 4px 0;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.1px;
     letter-spacing: -0.02em;
-    color: #fff;
-
+    color: #858385;
     content: "Шаг "counter(count);
+}
+
+.order__steps-item--active::before {
+    color: #fff;
+    background-color: #239DD6;
 }
 
 .order__steps-item:not(:last-child):after {
